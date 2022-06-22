@@ -1,0 +1,17 @@
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Application.deps.json
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Application.dll
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Application.pdb
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.csproj.AssemblyReference.cache
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.AssemblyInfoInputs.cache
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.AssemblyInfo.cs
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.csproj.CoreCompileInputs.cache
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.dll
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\refint\WebMVCComDDD.Application.dll
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.pdb
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\ref\WebMVCComDDD.Application.dll
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Domain.dll
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Infra.dll
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Infra.pdb
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\bin\Debug\net6.0\WebMVCComDDD.Domain.pdb
+C:\Dev\DotNet\WebMVCComDDD\WebMVCComDDD.Application\obj\Debug\net6.0\WebMVCComDDD.Application.csproj.CopyComplete
