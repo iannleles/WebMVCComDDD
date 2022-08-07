@@ -1,12 +1,16 @@
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using WebMVCComDDD.Application.Applications;
+using WebMVCComDDD.Application.Helpers;
 using WebMVCComDDD.Application.Interfaces;
 using WebMVCComDDD.Infra.Data;
 using WebMVCComDDD.Infra.Interfaces;
 using WebMVCComDDD.Infra.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
+
+
+builder.Services.Configure<EmailSettings>(builder.Configuration.GetSection("EmailSettings"));
 
 // Add services to the container.
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
@@ -19,6 +23,8 @@ builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.Requ
 builder.Services.AddControllersWithViews();
 builder.Services.AddScoped<IProdutoApplication, ProdutoApplication>();
 builder.Services.AddScoped<IProdutoRepository, ProdutoRepository>();
+
+builder.Services.AddScoped<IEmailApplication, EmailApplication>();
 
 var app = builder.Build();
 

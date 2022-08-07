@@ -9,6 +9,7 @@ using WebMVCComDDD.Application.ViewModels;
 using WebMVCComDDD.Infra.Data;
 using WebMVCComDDD.Application.Interfaces;
 using Microsoft.AspNetCore.Authorization;
+using WebMVCComDDD.Application.Helpers;
 
 namespace WebMVCComDDD.Controllers
 {
@@ -17,11 +18,13 @@ namespace WebMVCComDDD.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly IProdutoApplication _produtoApplication;
+        private readonly IEmailApplication _emailApplication;
 
-        public ProdutosController(ApplicationDbContext context, IProdutoApplication produtoApplication)
+        public ProdutosController(ApplicationDbContext context, IProdutoApplication produtoApplication, IEmailApplication emailApplication)
         {
             _context = context;
             _produtoApplication = produtoApplication;
+            _emailApplication = emailApplication;
         }
 
         // GET: Produtos
@@ -51,6 +54,15 @@ namespace WebMVCComDDD.Controllers
         public async Task<IActionResult> Create(ProdutoViewModel produtoViewModel)
         {
             _produtoApplication.Insert(produtoViewModel);
+
+            string body = "<h1> Novo produto cadastrado " + produtoViewModel.Nome + " </h1>";
+            var emailRequest = new EmailRequest
+            {
+                Body = body,
+                Subject = "Cadastro de produto",
+                ToEmail = "iann.marcos97@gmail.com"
+            };
+            await _emailApplication.SendEmailAsync(emailRequest);
             return RedirectToAction(nameof(Index));
         }
 
